@@ -57,6 +57,16 @@ class BooksController < ApplicationController
   end
 
   private
+    # Handles all tag lists when filling out fields for new book
+    # def fill_out_params
+    #   book = Book.new()
+    #   book.title = book_params[:title]
+    #   book.author = book_params[:author]
+    #   book.date_published = book_params[:date_published]
+    #   book.semesters =
+
+    # end
+
     # Use callbacks to share common setup or constraints between actions.
     def set_book
       @book = Book.find(params[:id])
@@ -64,6 +74,8 @@ class BooksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def book_params
-      params.require(:book).permit(:title, :author, :date_published)
+      params.require(:book).permit(:title, :author, :date_published, # types of tags listed below
+                                  :semester_list, :subject_list, :bachelor_list,
+                                  :non_bachelor_list, :other_list)
     end
 end

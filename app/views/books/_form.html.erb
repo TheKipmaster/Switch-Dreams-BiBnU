@@ -26,6 +26,32 @@
     <%= form.date_select :date_published %>
   </div>
 
+  <h3>Tags</h1>
+  <div class="field">
+    <%= form.label :semestre %>
+    <%= form.text_field :semester_list %>
+  </div>
+
+  <div class="field">
+    <%= form.label :disciplina %>
+    <%= form.text_field :subject_list %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bacharelado %>
+    <%= form.text_field :bachelor_list %>
+  </div>
+
+  <div class="field">
+    <%= form.label :licenciatura %>
+    <%= form.text_field :non_bachelor_list %>
+  </div>
+
+  <div class="field">
+    <%= form.label :outros %>
+    <%= form.text_field :other_list %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

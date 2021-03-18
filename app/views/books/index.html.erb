@@ -8,6 +8,11 @@
       <th>Title</th>
       <th>Author</th>
       <th>Date published</th>
+      <th>Semestres</th>
+      <th>Disciplina</th>
+      <th>Bacharelado</th>
+      <th>Licenciatura</th>
+      <th>Outros</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,6 +23,11 @@
         <td><%= book.title %></td>
         <td><%= book.author %></td>
         <td><%= book.date_published %></td>
+        <td><%= book.semester_list %></td>
+        <td><%= book.subject_list %></td>
+        <td><%= book.bachelor_list %></td>
+        <td><%= book.non_bachelor_list %></td>
+        <td><%= book.other_list %></td>
         <td><%= link_to 'Show', book %></td>
         <td><%= link_to 'Edit', edit_book_path(book) %></td>
         <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
