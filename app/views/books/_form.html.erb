@@ -62,6 +62,16 @@
                   { :multiple => true }  %>
   </div>
 
+  <div class="field">
+    <%= form.label "PDF do Livro" %>
+    <%= form.file_field :content %>
+  </div>
+
+  <div class="field">
+    <%= form.label "Capa do Livro" %>
+    <%= form.file_field :cover %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
