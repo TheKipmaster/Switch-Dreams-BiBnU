@@ -29,27 +29,37 @@
   <h3>Tags</h1>
   <div class="field">
     <%= form.label :semestre %>
-    <%= form.text_field :semester_list %>
+    <%= form.select :semester_list, Book.semester_tags,
+                  { :prompt => "Use CRTL para selecionar múltiplos ítens"},
+                  { :multiple => true }  %>
   </div>
 
   <div class="field">
     <%= form.label :disciplina %>
-    <%= form.text_field :subject_list %>
+    <%= form.select :subject_list, Book.subject_tags,
+                  { :prompt => "Use CRTL para selecionar múltiplos ítens"},
+                  { :multiple => true }  %>
   </div>
 
   <div class="field">
     <%= form.label :bacharelado %>
-    <%= form.text_field :bachelor_list %>
+    <%= form.select :bachelor_list, Book.bachelors_tags,
+                  { :prompt => "Use CRTL para selecionar múltiplos ítens"},
+                  { :multiple => true }  %>
   </div>
 
   <div class="field">
     <%= form.label :licenciatura %>
-    <%= form.text_field :non_bachelor_list %>
+    <%= form.select :non_bachelor_list, Book.non_bachelors_tags,
+                  { :prompt => "Use CRTL para selecionar múltiplos ítens"},
+                  { :multiple => true }  %>
   </div>
 
   <div class="field">
     <%= form.label :outros %>
-    <%= form.text_field :other_list %>
+    <%= form.select :other_list, Book.other_tags,
+                  { :prompt => "Use CRTL para selecionar múltiplos ítens"},
+                  { :multiple => true }  %>
   </div>
 
   <div class="actions">
