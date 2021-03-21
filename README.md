@@ -15,4 +15,6 @@ Sistema do acervo da biblioteca da BnU (BiBnU).
 
 - Teria bolado um jeito mais esperto de selecionar as tags. Se usasse só um campo de texto daria chance do usuário criar um monte de tag igual mas escrita diferente, enquanto que se usar só um select não dá chance do usuário criar tags novas. Eu tentei até fazer uma junção frankenstein dos dois, mas não consegui.
 
+- Teria feito o upload dos arquivos não demorar tanto. Honestamente nem sei por onde começar aqui. Quem sabe esteja um pouco fora do meu controle, dado que usei as versões gratis de todos os recursos de hospedagem.
+
 [Projeto hospedado no heroku](https://safe-hamlet-19538.herokuapp.com/books)
